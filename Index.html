@@ -8,72 +8,80 @@
 </head>
 <body>
   <header>
-    <div class="logo">🌐</div>
-    <nav>
+    <div class="logo"><img src="revo.jpg" alt="Logo" /></div>
+    
+    <nav class="menu-box">
+     
       <a href="#">Home</a>
       <a href="#">Facilities</a>
       <a href="#">Achievement</a>
       <a href="#">Message Us</a>
+   
     </nav>
+
   </header>
 
   <section class="hero">
-    <h1>Hi Hari, Welcome To Website</h1>
+    <h1>Hi im Alvi Garaali P, Welcome To Website</h1>
     <p>ini adalah website latihan pertama</p>
     <div class="image-placeholder">[Gambar]</div>
   </section>
 
-</hr>
-
   <section class="facilities">
     <h2>Our Facilitation</h2>
-    <div class="facility-list">
+    <div class="facility-container">
       <div class="facility">
-        <div class="icon">👩‍🏫</div>
+        <div class="facility-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/10618/10618241.png" alt="Professional Teacher Icon" >
         <p>Professional Teacher</p>
       </div>
       <div class="facility">
-        <div class="icon">⚽</div>
+        <div class="facility-item"> 
+        <img src="https://cdn-icons-png.flaticon.com/512/919/919431.png" alt="Sport Field Icon" >
         <p>Sport Field</p>
       </div>
       <div class="facility">
-        <div class="icon">🏫</div>
+        <div class="facility-item"> 
+        <img src="https://cdn-icons-png.flaticon.com/512/10477/10477625.png" alt="Classroom Icon" >
         <p>Classroom</p>
       </div>
     </div>
   </section>
 
-</hr>
-
-
-  <section class="contact">
+  <section class="message-section">
     <h2>Message Us</h2>
-    <form id="messageForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
+    <div class="form-container">
+      <form id="messageForm">
+        <label>Nama:</label>
+        <input type="text" id="nama" required />
 
-      <label for="dob">Date of Birth:</label>
-      <input type="date" id="dob" name="dob" required />
+        <label>Tanggal Lahir:</label>
+        <input type="date" id="tanggal" required />
 
-      <label>Gender:</label>
-      <label><input type="radio" name="gender" value="Male" required /> Male</label>
-      <label><input type="radio" name="gender" value="Female" required /> Female</label>
+        <label>Jenis Kelamin:</label>
+        <label><input type="radio" name="gender" value="Laki-Laki" required /> Laki-Laki</label>
+        <label><input type="radio" name="gender" value="Perempuan" /> Perempuan</label>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
+        <label>Pesan:</label>
+        <textarea id="pesan" rows="3" required></textarea>
 
-      <button type="submit">Submit</button>
-    </form>
+        <button type="submit">Submit</button>
+      </form>
 
-    <div class="output" id="formOutput">
-      <!-- Output akan ditampilkan di sini -->
+      <div class="output-box" id="output">
+        <p><strong>Current time:</strong> <span id="currentTime"></span></p>
+        <p><strong>Name:</strong> <span id="outputNama"></span></p>
+        <p><strong>Tanggal Lahir:</strong> <span id="outputTanggal"></span></p>
+        <p><strong>Jenis Kelamin:</strong> <span id="outputGender"></span></p>
+        <p><strong>Pesan:</strong> <span id="outputPesan"></span></p>
+      </div>
     </div>
   </section>
 
   <footer>
-    Created by Rizaldi
+    Created by Alvi Garaali P
   </footer>
-
-  <script src="script.js"></script>
+  
+<script src="script.js"></script>
 </body>
 </html>
