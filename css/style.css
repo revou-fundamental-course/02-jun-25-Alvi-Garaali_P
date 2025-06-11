@@ -61,6 +61,7 @@ header {
 }
 
 /* code menu-a */
+
 .nav-menu a {
   border: 1px solid #000;
   padding: 10px 20px;
@@ -84,47 +85,58 @@ header {
 
 /* untuk memasukan gambar */
 
-.image-placeholder {
+.img.src {
   height: 200px;
   background: #ccc; 
   margin-top: 20px;
   line-height: 200px;
 }
 
+/* style tulisan our facilites */
+ h2 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+
 /* style our facilities */
 
- .facilities {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
+.facilities {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
 
-    .facility {
-      background: #fff;
-      border-radius: 12px;
-      padding: 15px;
-      width: 150px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
+.facility-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
 
-    .facility:hover {
-      transform: translateY(-5px);
-    }
+.facility {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 180px;
+  text-align: center;
+}
 
-    .facility img {
-      width: 80px;
-      height: 80px;
-      object-fit: contain;
-    }
+.facility img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
 
-    .facility p {
-      margin-top: 10px;
-      font-size: 14px;
-      color: #333;
-    }
+.facility p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
 
+/* style untuk hr */
 .hr {
     border: none;
     border-top: 1px solid #000;
@@ -160,6 +172,7 @@ textarea {
   width: 100%;
   box-sizing: border-box;
 }
+
 /* style untuk tombol button */
 
 button {
@@ -168,6 +181,7 @@ button {
   border: 1px solid #ccc;
   cursor: pointer;
 }
+
 /* style untuk box yang ditampilkan */
 
 .output-box {
@@ -176,6 +190,7 @@ button {
   padding: 10px;
   background-color: #f9f9f9;
 }
+
 /* style untuk footer yang ada di bawah gambar */
 
 footer {
